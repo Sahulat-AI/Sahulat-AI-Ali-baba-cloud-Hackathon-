@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+
+{% block title %}Sahulat AI — Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="sa-hero text-white text-center d-flex align-items-center position-relative">
+    <!-- Decorative floating shapes -->
+    <div class="sa-floating-shape sa-shape-1"></div>
+    <div class="sa-floating-shape sa-shape-2"></div>
+    <div class="sa-floating-shape sa-shape-3"></div>
+
+    <div class="container py-5 position-relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <span class="sa-hero-badge mb-3 d-inline-block">
+                    <i class="bi bi-geo-alt-fill me-1"></i> Made for Pakistan
+                </span>
+                <h1 class="display-3 fw-bold mb-3 sa-hero-title">
+                    Your AI Guide to <span class="sa-text-gradient">Pakistani Government Services</span>
+                </h1>
+                <p class="lead mb-4 sa-hero-lead">
+                    Bilingual, voice-enabled assistance for NADRA, passport, driving license, utility bills, and FBR — in simple Urdu or English.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+                    <a href="/chat" class="btn btn-light btn-lg px-4 fw-semibold sa-btn-hero-primary">
+                        <i class="bi bi-chat-dots-fill me-2"></i>Start Chatting
+                    </a>
+                    <a href="/about" class="btn btn-outline-light btn-lg px-4">
+                        <i class="bi bi-info-circle me-2"></i>Learn More
+                    </a>
+                </div>
+
+                <!-- Stats bar -->
+                <div class="row g-3 justify-content-center sa-stats-bar">
+                    <div class="col-6 col-md-3">
+                        <div class="sa-stat-item">
+                            <div class="sa-stat-number">5+</div>
+                            <div class="sa-stat-label">Services</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="sa-stat-item">
+                            <div class="sa-stat-number">2</div>
+                            <div class="sa-stat-label">Languages</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="sa-stat-item">
+                            <div class="sa-stat-number">24/7</div>
+                            <div class="sa-stat-label">Available</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="sa-stat-item">
+                            <div class="sa-stat-number"><i class="bi bi-mic-fill"></i></div>
+                            <div class="sa-stat-label">Voice Enabled</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom wave -->
+    <div class="sa-hero-wave">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V120Z" fill="#ffffff"/>
+        </svg>
+    </div>
+</section>
+
+<!-- How it works -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="sa-section-label">How it works</span>
+            <h2 class="fw-bold">Get guidance in 3 simple steps</h2>
+            <p class="text-muted mb-0">No forms, no waiting — just ask and follow the steps.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="sa-step-card text-center h-100">
+                    <div class="sa-step-number">1</div>
+                    <div class="sa-icon-circle mb-3">
+                        <i class="bi bi-mic-fill"></i>
+                    </div>
+                    <h5 class="fw-bold">Ask by voice or text</h5>
+                    <p class="text-muted mb-0">Speak in Urdu or English, or type your question anytime.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sa-step-card text-center h-100">
+                    <div class="sa-step-number">2</div>
+                    <div class="sa-icon-circle mb-3">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                    <h5 class="fw-bold">Get a clear answer</h5>
+                    <p class="text-muted mb-0">Sahulat AI explains procedures, documents, fees, and portals.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sa-step-card text-center h-100">
+                    <div class="sa-step-number">3</div>
+                    <div class="sa-icon-circle mb-3">
+                        <i class="bi bi-volume-up-fill"></i>
+                    </div>
+                    <h5 class="fw-bold">Listen & follow</h5>
+                    <p class="text-muted mb-0">Press Listen to hear the answer aloud while you follow along.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Cards -->
+<section class="py-5 sa-services-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="sa-section-label">Features</span>
+            <h2 class="fw-bold">Why use Sahulat AI?</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card sa-feature-card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="sa-icon-circle mb-3">
+                            <i class="bi bi-mic-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Voice Enabled</h5>
+                        <p class="text-muted mb-0">Speak in Urdu or English — Sahulat AI listens and responds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card sa-feature-card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="sa-icon-circle mb-3">
+                            <i class="bi bi-list-ol"></i>
+                        </div>
+                        <h5 class="fw-bold">Step by Step</h5>
+                        <p class="text-muted mb-0">Clear guidance for every service — documents, fees, and portals explained simply.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card sa-feature-card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="sa-icon-circle mb-3">
+                            <i class="bi bi-clock-fill"></i>
+                        </div>
+                        <h5 class="fw-bold">Always Available</h5>
+                        <p class="text-muted mb-0">Get guidance whenever you need it — no appointments, no waiting lines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Supported Services -->
+<section class="py-5">
+    <div class="container text-center">
+        <span class="sa-section-label">Supported Services</span>
+        <h2 class="fw-bold mb-2">Government services we cover</h2>
+        <p class="text-muted mb-5">Sahulat AI currently covers these key areas, with more being added.</p>
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sa-service-badge">
+                    <i class="bi bi-credit-card-2-front-fill mb-2 d-block"></i>
+                    <span>NADRA</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sa-service-badge">
+                    <i class="bi bi-journal-bookmark-fill mb-2 d-block"></i>
+                    <span>Passport</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sa-service-badge">
+                    <i class="bi bi-car-front-fill mb-2 d-block"></i>
+                    <span>Driving License</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sa-service-badge">
+                    <i class="bi bi-lightning-charge-fill mb-2 d-block"></i>
+                    <span>Utility Bills</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="sa-service-badge">
+                    <i class="bi bi-building-fill mb-2 d-block"></i>
+                    <span>FBR</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <a href="/chat" class="btn sa-btn-green btn-lg px-5">
+                <i class="bi bi-arrow-right-circle me-2"></i>Ask Sahulat AI Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Call to action -->
+<section class="sa-cta-section text-white text-center position-relative">
+    <div class="container py-5 position-relative z-1">
+        <h2 class="fw-bold mb-3 display-6">Ready to get started?</h2>
+        <p class="mb-4 opacity-75 lead">Try Sahulat AI now and get step-by-step guidance in your language.</p>
+        <a href="/chat" class="btn btn-light btn-lg px-5 fw-bold sa-btn-hero-primary">
+            <i class="bi bi-arrow-right-circle me-2"></i>Ask Sahulat AI Now
+        </a>
+    </div>
+</section>
+{% endblock %}
